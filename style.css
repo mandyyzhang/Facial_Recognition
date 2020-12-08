@@ -1,0 +1,315 @@
+body, html{
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+body{
+  background-color: black;
+}
+/*----------------------------------------*/
+#up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99; /*be in front */
+  font-size: 20px;
+  border: none;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#up:hover {
+  background-color: #5E5E5E;
+}
+/*----------------------------------------*/
+.navMenu{
+  display: flex;
+  justify-content: space-around;
+}
+
+.navMenu > a {
+  display: flex;
+  color: #6cabdb;
+  padding: 2vmin;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.navMenu > a:hover{
+  background-color: gray;
+  color: black;
+}
+
+.navMenu > a:active{
+  color: #00be65;
+}
+/*----------------------------------------*/
+.arrow > a, .arrow2 > a, .arrow3 > a, .arrow4 > a{
+  display: flex;
+  justify-content: center;
+  font-size: 10rem;
+  text-decoration: none;
+  color: #00be65;
+  position: relative;
+  bottom: 120px;
+}
+
+.arrow > a:hover, .arrow2 > a:hover, .arrow3 > a:hover, .arrow4 > a:hover{
+  transform: scale(1.1);
+  color:#016038;
+}
+
+.arrow2 > a{
+  bottom: 210px;
+}
+
+.arrow3 > a{
+  bottom: 230px;
+}
+
+.arrow4 > a{
+  bottom: 270px;
+}
+/*HOME PAGE ===================================================================*/
+
+.mainPic{
+  display: flex;
+  background-image: url('face.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  height: 80vh;
+
+  justify-content: center;
+  align-items: center;
+  color: #6cabdb;
+  font-size: 5vmin;
+}
+/*----------------------------------------*/
+.scanPic{
+  display: flex;
+  background-image: url('scan.gif');
+  background-repeat: no-repeat;
+  background-position: center, center;
+  height: 100vh;
+  border-top: 1px solid #00be65;
+
+  justify-content: center;
+  align-items: center;
+}
+/*----------------------------------------*/
+.question, .question2{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid #00be65;
+  border-bottom: 1px solid #00be65;
+  position: relative;
+  bottom: 50px;
+  padding: 10px
+}
+
+.question:hover, .question2:hover{
+  background-color: gray;
+}
+
+.question > a,.question2 > a{
+  text-decoration: none;
+  color: white;
+  font-size: 45px;
+}
+
+.question> a:hover, .question2 >a:hover{
+  color: black;
+}
+
+.question > a:active,.question2 > a:active{
+  color: #00be65;
+}
+
+/*----------------------------------------*/
+.content{
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  line-height: 1.5em;
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+  bottom: 30px
+}
+/*----------------------------------------*/
+.pic{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/*----------------------------------------*/
+.content2{
+  text-align: center;
+  line-height: 3em;
+  margin: 20px;
+  padding: 20px;
+}
+
+.content2 > p{
+  color: white;
+  font-size: 2rem;
+}
+
+.content2 > h2{
+  color: #00be65;
+  font-size: 2rem;
+}
+
+/*RESEARCH PAGE ===============================================================*/
+.mainPic2{
+  display: flex;
+  background-image: url('facedata.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  height: 95vh;
+}
+/*----------------------------------------*/
+.title{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border-top: 1px solid #00be65;
+  border-bottom: 1px solid #00be65;
+  padding: 10px;
+  position: relative;
+  bottom: 120px;
+}
+
+.title:hover{
+  background-color: gray;
+}
+
+.title > a{
+  text-decoration: none;
+  color: white;
+  font-size: 45px;
+}
+
+.title> a:hover{
+  color: black;
+}
+
+.title > a:active{
+  color: #00be65;
+}
+/*----------------------------------------*/
+.videos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  bottom: 80px;
+}
+
+.videos > iframe{
+  margin: 20px;
+}
+/*----------------------------------------*/
+.content3{
+  display: flex;
+  flex-direction: column;
+  color: white;
+  position: relative;
+  bottom: 50px;
+  margin: 30px;
+}
+
+.content3 > h2{
+  text-align: center;
+  border: 1px solid #00be65;
+}
+
+.content3 > p{
+  line-height: 1.5em;
+}
+
+/*ISSUES PAGE =================================================================*/
+.mainPic3{
+  display: flex;
+  background-image: url('camera.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center, center;
+  height: 100vh;
+
+  justify-content: center;
+  align-items: center;
+  color: #00be65;
+  font-size: 5vmin;
+}
+
+.mainPic3 > h1{
+  position: relative;
+  bottom: 30px;
+}
+
+/*----------------------------------------*/
+.heading{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-top: 1px solid #00be65;
+  border-bottom: 1px solid #00be65;
+  font-size: 1.3rem;
+  position: relative;
+  bottom: 150px;
+}
+/*----------------------------------------*/
+#issues{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1vmin;
+  grid-row-gap: 1vmin;
+  padding: 4vmin;
+  font-size: 1.5rem;
+  position: relative;
+  bottom: 100px;
+}
+/*----------------------------------------*/
+.contentItem {
+  display: flex;
+  flex-direction: column;
+  padding: 1vmin;
+  color: white;
+  border: 2px solid #00be65;
+  border-radius: 0.25vmin;
+  height: 100%;
+}
+/*----------------------------------------*/
+
+.name{
+  font-size: 2rem;
+  text-align: center;
+}
+/*----------------------------------------*/
+.image{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.image:hover{
+  transform: scale(1.2);
+  opacity: 0.3;
+}
+
+/*----------------------------------------*/
+.descript{
+  font-size: 1.5rem;
+  text-align: center;
+}
